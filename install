@@ -1,0 +1,15 @@
+node-gyp rebuild
+
+#sudo sed -i -e "s/allowed_users=.*/allowed_users=anybody/g" /etc/X11/Xwrapper.config
+#sudo sed -i 's/.*exit.*/su -c "startx" pi\n&/' /etc/rc.local
+
+#export PATH="$PATH:$HOME/node/bin"
+#npm i express
+#npm i date-format
+#npm i socket.io
+#npm i winston
+
+#cat <<XINITRC > $HOME/.xinitrc
+#exec \$HOME/node/bin/node \$HOME/rpi-manager/server.js
+#XINITRC
+#sudo chmod +x $HOME/.xinitrc

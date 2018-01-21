@@ -1,0 +1,9 @@
+sudo sed -i -e "s/allowed_users=.*/allowed_users=anybody/g" /etc/X11/Xwrapper.config
+#sudo sed -i 's/.*exit.*/su -c "startx" $USER\n&/' /etc/rc.local
+
+if [ ! -f $HOME/.xinitrc ]; then
+  cat <<XINITRC > $HOME/.xinitrc
+exec \$HOME/node/bin/node \$HOME/rpi-manager/server.js
+XINITRC
+  sudo chmod +x $HOME/.xinitrc
+fi

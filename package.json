@@ -5,14 +5,20 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "startx",
+    "preinstall": "preinstall"
+    "install": "install"
   },
-  "author": "",
+  "author": "djdjocker",
   "license": "ISC",
   "dependencies": {
     "date-format": "^1.2.0",
     "express": "^4.16.2",
     "socket.io": "^2.0.4",
     "winston": "^2.4.0"
+  }
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/djdjocker/rpi-manager.git"
   }
 }
